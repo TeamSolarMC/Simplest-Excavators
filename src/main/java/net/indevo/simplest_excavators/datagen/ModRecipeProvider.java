@@ -59,6 +59,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         .of(Items.STICK).build()))
                 .save(p_251297_);
 
+
         netheriteSmithing(p_251297_, ModItems.DIAMOND_EXCAVATOR.get(), RecipeCategory.MISC, ModItems.NETHERITE_EXCAVATOR.get());
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STONE_EXCAVATOR.get())
