@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:stone_bricks"
+    },
+    "C": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " A ",
+    " C ",
+    " C "
+  ],
+  "result": {
+    "item": "simplest_excavators:stone_excavator"
+  },
+  "show_notification": true
+}
