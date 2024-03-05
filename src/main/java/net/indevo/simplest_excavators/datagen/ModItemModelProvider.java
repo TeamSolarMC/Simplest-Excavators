@@ -20,12 +20,12 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-//        handheldItem(ModItems.WOOD_EXCAVATOR);
-//        handheldItem(ModItems.STONE_EXCAVATOR);
-//        handheldItem(ModItems.IRON_EXCAVATOR);
-//        handheldItem(ModItems.GOLD_EXCAVATOR);
-//        handheldItem(ModItems.DIAMOND_EXCAVATOR);
-//        handheldItem(ModItems.NETHERITE_EXCAVATOR);
+        handheldItem(ModItems.WOOD_EXCAVATOR);
+        handheldItem(ModItems.STONE_EXCAVATOR);
+        handheldItem(ModItems.IRON_EXCAVATOR);
+        handheldItem(ModItems.GOLD_EXCAVATOR);
+        handheldItem(ModItems.DIAMOND_EXCAVATOR);
+        handheldItem(ModItems.NETHERITE_EXCAVATOR);
     }
 
     private ItemModelBuilder complexBlock(Block block) {

@@ -1,0 +1,11 @@
+{
+  "item.simplest_excavators.wood_hammer": "Деревянный выкапыватель",
+  "item.simplest_excavators.stone_hammer": "Каменный выкапыватель",
+  "item.simplest_excavators.iron_hammer": "Железный выкапыватель",
+  "item.simplest_excavators.gold_hammer": "Золотой выкапыватель",
+  "item.simplest_excavators.diamond_hammer": "Алмазный выкапыватель",
+  "item.simplest_excavators.netherite_hammer": "Незеритовый выкапыватель",
+
+
+  "creativetab.simplest_excavators_tab": "Simplest Excavators"
+}
