@@ -13,17 +13,17 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, SimplestExcavators.MOD_ID);
 
     public static final RegistryObject<Item> WOOD_EXCAVATOR = ITEMS.register("wood_excavator",
-            () -> new ExcavatorItem(ModToolTiers.WOOD, 5, -3.4F, new Item.Properties().durability(88)));
+            () -> new ExcavatorItem(ModToolTiers.WOOD, 1.5f, -3.4F, new Item.Properties().durability(88)));
     public static final RegistryObject<Item> STONE_EXCAVATOR = ITEMS.register("stone_excavator",
-            () -> new ExcavatorItem(ModToolTiers.STONE, 5, -3.4F, new Item.Properties().durability(196)));
+            () -> new ExcavatorItem(ModToolTiers.STONE, 1.5f, -3.4F, new Item.Properties().durability(196)));
     public static final RegistryObject<Item> IRON_EXCAVATOR = ITEMS.register("iron_excavator",
-            () -> new ExcavatorItem(ModToolTiers.IRON, 5, -3.4F, new Item.Properties().durability(375)));
+            () -> new ExcavatorItem(ModToolTiers.IRON, 1.5f, -3.4F, new Item.Properties().durability(375)));
     public static final RegistryObject<Item> GOLD_EXCAVATOR = ITEMS.register("gold_excavator",
-            () -> new ExcavatorItem(ModToolTiers.GOLD, 5, -3.4F, new Item.Properties().durability(48)));
+            () -> new ExcavatorItem(ModToolTiers.GOLD, 1.5f, -3.4F, new Item.Properties().durability(48)));
     public static final RegistryObject<Item> DIAMOND_EXCAVATOR = ITEMS.register("diamond_excavator",
-            () -> new ExcavatorItem(ModToolTiers.DIAMOND, 5, -3.4F, new Item.Properties().durability(2341)));
+            () -> new ExcavatorItem(ModToolTiers.DIAMOND, 1.5f, -3.4F, new Item.Properties().durability(2341)));
     public static final RegistryObject<Item> NETHERITE_EXCAVATOR = ITEMS.register("netherite_excavator",
-            () -> new ExcavatorItem(ModToolTiers.NETHERITE, 5, -3.4F, new Item.Properties().durability(3046)));
+            () -> new ExcavatorItem(ModToolTiers.NETHERITE, 1.5f, -3.4F, new Item.Properties().durability(3046)));
 
 
 

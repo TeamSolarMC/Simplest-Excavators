@@ -1,10 +1,10 @@
 {
-  "item.simplest_excavators.wood_hammer": "Wood Excavator",
-  "item.simplest_excavators.stone_hammer": "Stone Excavator",
-  "item.simplest_excavators.iron_hammer": "Iron Excavator",
-  "item.simplest_excavators.gold_hammer": "Gold Excavator",
-  "item.simplest_excavators.diamond_hammer": "Diamond Excavator",
-  "item.simplest_excavators.netherite_hammer": "Netherite Excavator",
+  "item.simplest_excavators.wood_excavator": "Wood Excavator",
+  "item.simplest_excavators.stone_excavator": "Stone Excavator",
+  "item.simplest_excavators.iron_excavator": "Iron Excavator",
+  "item.simplest_excavators.gold_excavator": "Gold Excavator",
+  "item.simplest_excavators.diamond_excavator": "Diamond Excavator",
+  "item.simplest_excavators.netherite_excavator": "Netherite Excavator",
 
 
   "creativetab.simplest_excavators_tab": "Simplest Excavators"
