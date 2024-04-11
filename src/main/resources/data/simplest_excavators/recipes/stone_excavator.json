@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "minecraft:stone_bricks"
+      "tag": "simplest_compression:advanced_stone_tool_materials"
     },
     "C": {
       "item": "minecraft:stick"

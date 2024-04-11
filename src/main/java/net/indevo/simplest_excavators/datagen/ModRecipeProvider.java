@@ -9,7 +9,6 @@ import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
 import java.util.function.Consumer;
@@ -61,18 +60,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
         netheriteSmithing(p_251297_, ModItems.DIAMOND_EXCAVATOR.get(), RecipeCategory.MISC, ModItems.NETHERITE_EXCAVATOR.get());
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STONE_EXCAVATOR.get())
-                .pattern(" A ")
-                .pattern(" C ")
-                .pattern(" C ")
-                .define('A', Items.STONE_BRICKS)
-                .define('C', Items.STICK)
-                .unlockedBy("has_stone_bricks", inventoryTrigger(ItemPredicate.Builder.item()
-                        .of(Items.COBBLESTONE).build()))
-                .unlockedBy("has_stick", inventoryTrigger(ItemPredicate.Builder.item()
-                        .of(Items.STICK).build()))
-                .save(p_251297_);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.WOOD_EXCAVATOR.get())
                 .pattern(" B ")
