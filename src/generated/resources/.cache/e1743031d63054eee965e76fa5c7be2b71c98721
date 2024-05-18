@@ -1,7 +1,7 @@
-// 1.20.1	2024-03-05T21:40:01.6928382	Item Models: simplest_excavators
+// 1.20.1	2024-05-17T20:46:23.5253659	Item Models: simplest_excavators
 8a5f262f5d4685e128c140e8be4a551042005881 assets/simplest_excavators/models/item/diamond_excavator.json
-ea9cb3f2e3d12df16b4e9d03fc90c897135696da assets/simplest_excavators/models/item/gold_excavator.json
+6f92aada8b06ba40cf199b77b0bbca26ec3e49f5 assets/simplest_excavators/models/item/golden_excavator.json
 a66adff3b8cf1bacc0950213d4a88e0db6ffac54 assets/simplest_excavators/models/item/iron_excavator.json
 f69358656f1be6f02784c1cf88f62de938538cd7 assets/simplest_excavators/models/item/netherite_excavator.json
 917d0af03bcd5e4c4b9105e3d6472f6f12afb614 assets/simplest_excavators/models/item/stone_excavator.json
-b25bb532c337f615ad1725e906ea77bd8af37f95 assets/simplest_excavators/models/item/wood_excavator.json
+756caa63676239c8f387ff93665aed69ce9e8885 assets/simplest_excavators/models/item/wooden_excavator.json

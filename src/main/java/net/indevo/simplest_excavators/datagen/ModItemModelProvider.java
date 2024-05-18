@@ -20,10 +20,10 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        handheldItem(ModItems.WOOD_EXCAVATOR);
+        handheldItem(ModItems.WOODEN_EXCAVATOR);
         handheldItem(ModItems.STONE_EXCAVATOR);
         handheldItem(ModItems.IRON_EXCAVATOR);
-        handheldItem(ModItems.GOLD_EXCAVATOR);
+        handheldItem(ModItems.GOLDEN_EXCAVATOR);
         handheldItem(ModItems.DIAMOND_EXCAVATOR);
         handheldItem(ModItems.NETHERITE_EXCAVATOR);
     }

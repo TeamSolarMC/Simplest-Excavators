@@ -10,7 +10,7 @@ license="MIT"
 
 modId="simplest_excavators"
 
-version="1.1.1"
+version="1.1.3"
 
 displayName="Simplest Excavators"
 
@@ -18,7 +18,7 @@ authors="IndEvo Studio" #optional
 
 
 
-description='''A light mod adding vanilla excavators breaking in area 3x3.'''
+description='''Vanilla excavators breaking in a 3x3 area.'''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.simplest_excavators]] #optional
 # the modid of the dependency

@@ -22,9 +22,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(ModTags.Items.EXCAVATORS)
                 .add(
-                        ModItems.WOOD_EXCAVATOR.get(),
+                        ModItems.WOODEN_EXCAVATOR.get(),
                         ModItems.STONE_EXCAVATOR.get(),
-                        ModItems.GOLD_EXCAVATOR.get(),
+                        ModItems.GOLDEN_EXCAVATOR.get(),
                         ModItems.IRON_EXCAVATOR.get(),
                         ModItems.DIAMOND_EXCAVATOR.get(),
                         ModItems.NETHERITE_EXCAVATOR.get());

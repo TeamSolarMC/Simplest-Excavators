@@ -1,10 +1,8 @@
 package net.indevo.simplest_excavators.datagen;
 
 import net.indevo.simplest_excavators.SimplestExcavators;
-import net.indevo.simplest_excavators.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;

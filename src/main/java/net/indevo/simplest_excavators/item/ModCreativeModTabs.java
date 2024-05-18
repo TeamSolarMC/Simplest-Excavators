@@ -17,10 +17,10 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.NETHERITE_EXCAVATOR.get()))
                     .title(Component.translatable("creativetab.simplest_excavators_tab"))
                     .displayItems(((pParameters, pOutput) -> {
-                        pOutput.accept(ModItems.WOOD_EXCAVATOR.get());
+                        pOutput.accept(ModItems.WOODEN_EXCAVATOR.get());
                         pOutput.accept(ModItems.STONE_EXCAVATOR.get());
                         pOutput.accept(ModItems.IRON_EXCAVATOR.get());
-                        pOutput.accept(ModItems.GOLD_EXCAVATOR.get());
+                        pOutput.accept(ModItems.GOLDEN_EXCAVATOR.get());
                         pOutput.accept(ModItems.DIAMOND_EXCAVATOR.get());
                         pOutput.accept(ModItems.NETHERITE_EXCAVATOR.get());
                     }))

@@ -1,8 +1,8 @@
 {
   "values": [
-    "simplest_excavators:wood_excavator",
+    "simplest_excavators:wooden_excavator",
     "simplest_excavators:stone_excavator",
-    "simplest_excavators:gold_excavator",
+    "simplest_excavators:golden_excavator",
     "simplest_excavators:iron_excavator",
     "simplest_excavators:diamond_excavator",
     "simplest_excavators:netherite_excavator"

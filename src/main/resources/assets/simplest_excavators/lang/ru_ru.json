@@ -1,8 +1,8 @@
 {
-  "item.simplest_excavators.wood_excavator": "Деревянный выкапыватель",
+  "item.simplest_excavators.wooden_excavator": "Деревянный выкапыватель",
   "item.simplest_excavators.stone_excavator": "Каменный выкапыватель",
   "item.simplest_excavators.iron_excavator": "Железный выкапыватель",
-  "item.simplest_excavators.gold_excavator": "Золотой выкапыватель",
+  "item.simplest_excavators.golden_excavator": "Золотой выкапыватель",
   "item.simplest_excavators.diamond_excavator": "Алмазный выкапыватель",
   "item.simplest_excavators.netherite_excavator": "Незеритовый выкапыватель",
 

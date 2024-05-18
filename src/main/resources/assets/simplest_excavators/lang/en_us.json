@@ -1,8 +1,8 @@
 {
-  "item.simplest_excavators.wood_excavator": "Wood Excavator",
+  "item.simplest_excavators.wooden_excavator": "Wooden Excavator",
   "item.simplest_excavators.stone_excavator": "Stone Excavator",
   "item.simplest_excavators.iron_excavator": "Iron Excavator",
-  "item.simplest_excavators.gold_excavator": "Gold Excavator",
+  "item.simplest_excavators.golden_excavator": "Golden Excavator",
   "item.simplest_excavators.diamond_excavator": "Diamond Excavator",
   "item.simplest_excavators.netherite_excavator": "Netherite Excavator",
 
