@@ -4,7 +4,5 @@
   "item.simplest_excavators.iron_excavator": "Железный выкапыватель",
   "item.simplest_excavators.golden_excavator": "Золотой выкапыватель",
   "item.simplest_excavators.diamond_excavator": "Алмазный выкапыватель",
-  "item.simplest_excavators.netherite_excavator": "Незеритовый выкапыватель",
-
-  "creativetab.simplest_excavators_tab": "Simplest Excavators"
+  "item.simplest_excavators.netherite_excavator": "Незеритовый выкапыватель"
 }

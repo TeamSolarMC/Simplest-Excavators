@@ -1,8 +1,8 @@
 package net.indevo.simplest_excavators;
 
 import com.mojang.logging.LogUtils;
-import net.indevo.simplest_excavators.item.ModCreativeModTabs;
 import net.indevo.simplest_excavators.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -24,8 +24,6 @@ public class SimplestExcavators
     public SimplestExcavators() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModCreativeModTabs.register(modEventBus);
-
         ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
@@ -39,7 +37,14 @@ public class SimplestExcavators
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.WOODEN_EXCAVATOR);
+            event.accept(ModItems.STONE_EXCAVATOR);
+            event.accept(ModItems.IRON_EXCAVATOR);
+            event.accept(ModItems.GOLDEN_EXCAVATOR);
+            event.accept(ModItems.DIAMOND_EXCAVATOR);
+            event.accept(ModItems.NETHERITE_EXCAVATOR);
+        }
     }
 
     @SubscribeEvent

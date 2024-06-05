@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:gold_block"
+    },
+    "C": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " B ",
+    " C ",
+    " C "
+  ],
+  "result": {
+    "item": "simplest_excavators:golden_excavator"
+  },
+  "show_notification": true
+}
