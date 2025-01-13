@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_excavator_template": {
+      "conditions": {
+        "items": [
+          {
+            "items": "simplest_excavators:excavator_smithing_template"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "simplest_excavators:iron_excavator_from_upgrade"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_excavator_template"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "simplest_excavators:iron_excavator_from_upgrade"
+    ]
+  }
+}

@@ -1,4 +1,4 @@
-package net.teamsolar.simplest_hammers.item.custom;
+package net.teamsolar.simplest_excavators.item.custom;
 
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.tags.TagKey;
@@ -7,14 +7,13 @@ import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.level.block.Block;
 
 public class DiggerItemWithoutDurability extends TieredItemWithoutDurability {
-    public DiggerItemWithoutDurability(Tier tier, TagKey<Block> blocks, Item.Properties properties) {
+    public DiggerItemWithoutDurability(Tier tier, TagKey<Block> blocks, Properties properties) {
         super(tier, properties.component(DataComponents.TOOL, tier.createToolProperties(blocks)));
     }
 

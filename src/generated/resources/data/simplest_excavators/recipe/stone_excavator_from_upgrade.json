@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:smooth_stone"
+  },
+  "base": {
+    "item": "simplest_excavators:wooden_excavator"
+  },
+  "result": {
+    "count": 1,
+    "id": "simplest_excavators:stone_excavator"
+  },
+  "template": {
+    "item": "simplest_excavators:excavator_smithing_template"
+  }
+}

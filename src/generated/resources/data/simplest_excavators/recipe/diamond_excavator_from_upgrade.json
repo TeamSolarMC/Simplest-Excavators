@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:diamond_block"
+  },
+  "base": {
+    "item": "simplest_excavators:golden_excavator"
+  },
+  "result": {
+    "count": 1,
+    "id": "simplest_excavators:diamond_excavator"
+  },
+  "template": {
+    "item": "simplest_excavators:excavator_smithing_template"
+  }
+}

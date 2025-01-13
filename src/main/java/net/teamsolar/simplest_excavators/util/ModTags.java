@@ -1,6 +1,6 @@
-package net.indevo.simplest_excavators.util;
+package net.teamsolar.simplest_excavators.util;
 
-import net.indevo.simplest_excavators.SimplestExcavators;
+import net.teamsolar.simplest_excavators.SimplestExcavators;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
@@ -19,10 +19,10 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_NETHERITE_TOOL = tag("needs_netherite_tool");
 
         private static TagKey<Block> tag(String name) {
-            return BlockTags.create(new ResourceLocation(SimplestExcavators.MOD_ID, name));
+            return BlockTags.create(ResourceLocation.fromNamespaceAndPath(SimplestExcavators.MODID, name));
         }
         private static TagKey<Block> forgeTag(String name) {
-            return BlockTags.create(new ResourceLocation("forge", name));
+            return BlockTags.create(ResourceLocation.fromNamespaceAndPath("forge", name));
         }
     }
 
@@ -30,10 +30,10 @@ public class ModTags {
         public static final TagKey<Item> EXCAVATORS = forgeTag("excavators");
 
         private static TagKey<Item> tag(String name) {
-            return ItemTags.create(new ResourceLocation(SimplestExcavators.MOD_ID, name));
+            return ItemTags.create(ResourceLocation.fromNamespaceAndPath(SimplestExcavators.MODID, name));
         }
         private static TagKey<Item> forgeTag(String name) {
-            return ItemTags.create(new ResourceLocation("forge", name));
+            return ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", name));
         }
     }
 }

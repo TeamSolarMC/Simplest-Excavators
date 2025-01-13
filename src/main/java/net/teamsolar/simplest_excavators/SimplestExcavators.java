@@ -1,34 +1,39 @@
-package net.indevo.simplest_excavators;
+package net.teamsolar.simplest_excavators;
 
 import com.mojang.logging.LogUtils;
-import net.indevo.simplest_excavators.item.ModItems;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.teamsolar.simplest_excavators.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
-import net.minecraftforge.event.server.ServerStartingEvent;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import net.teamsolar.simplest_excavators.loot.ModLootModifiers;
 import org.slf4j.Logger;
 
-@Mod(SimplestExcavators.MOD_ID)
+@Mod(SimplestExcavators.MODID)
 public class SimplestExcavators
 {
-    public static final String MOD_ID = "simplest_excavators";
+    public static final String MODID = "simplest_excavators";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public SimplestExcavators() {
-        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+    public static Logger getLogger() {
+        return LOGGER;
+    }
 
-        ModItems.register(modEventBus);
-
+    public SimplestExcavators(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
 
-        MinecraftForge.EVENT_BUS.register(this);
+        ModItems.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
+
+        NeoForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
     }
 
@@ -45,6 +50,9 @@ public class SimplestExcavators
             event.accept(ModItems.DIAMOND_EXCAVATOR);
             event.accept(ModItems.NETHERITE_EXCAVATOR);
         }
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.EXCAVATOR_SMITHING_TEMPLATE);
+        }
     }
 
     @SubscribeEvent
@@ -52,7 +60,7 @@ public class SimplestExcavators
 
     }
 
-    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {

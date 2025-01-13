@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "simplest_excavators:item/excavator_smithing_template"
+  }
+}

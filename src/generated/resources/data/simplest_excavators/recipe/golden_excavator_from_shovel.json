@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:gold_block"
+  },
+  "base": {
+    "item": "minecraft:golden_shovel"
+  },
+  "result": {
+    "count": 1,
+    "id": "simplest_excavators:golden_excavator"
+  },
+  "template": {
+    "item": "simplest_excavators:excavator_smithing_template"
+  }
+}

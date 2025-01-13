@@ -1,13 +1,14 @@
-package net.indevo.simplest_excavators.datagen;
+package net.teamsolar.simplest_excavators.datagen;
 
-import net.indevo.simplest_excavators.SimplestExcavators;
-import net.indevo.simplest_excavators.item.ModItems;
-import net.indevo.simplest_excavators.util.ModTags;
+import net.minecraft.tags.ItemTags;
+import net.teamsolar.simplest_excavators.SimplestExcavators;
+import net.teamsolar.simplest_excavators.item.ModItems;
+import net.teamsolar.simplest_excavators.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -15,7 +16,7 @@ import java.util.concurrent.CompletableFuture;
 public class ModItemTagGenerator extends ItemTagsProvider {
     public ModItemTagGenerator(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> future,
                                CompletableFuture<TagLookup<Block>> completableFuture, @Nullable ExistingFileHelper existingFileHelper) {
-        super(packOutput, future, completableFuture, SimplestExcavators.MOD_ID, existingFileHelper);
+        super(packOutput, future, completableFuture, SimplestExcavators.MODID, existingFileHelper);
     }
 
     @Override
@@ -28,6 +29,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.IRON_EXCAVATOR.get(),
                         ModItems.DIAMOND_EXCAVATOR.get(),
                         ModItems.NETHERITE_EXCAVATOR.get());
+        this.tag(ItemTags.DURABILITY_ENCHANTABLE).addTag(ModTags.Items.EXCAVATORS);
+        this.tag(ItemTags.MINING_ENCHANTABLE).addTag(ModTags.Items.EXCAVATORS);
+        this.tag(ItemTags.MINING_LOOT_ENCHANTABLE).addTag(ModTags.Items.EXCAVATORS);
     }
 
     @Override

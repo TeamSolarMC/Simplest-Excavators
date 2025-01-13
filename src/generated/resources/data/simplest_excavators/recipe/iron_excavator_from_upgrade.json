@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:iron_block"
+  },
+  "base": {
+    "item": "simplest_excavators:stone_excavator"
+  },
+  "result": {
+    "count": 1,
+    "id": "simplest_excavators:iron_excavator"
+  },
+  "template": {
+    "item": "simplest_excavators:excavator_smithing_template"
+  }
+}

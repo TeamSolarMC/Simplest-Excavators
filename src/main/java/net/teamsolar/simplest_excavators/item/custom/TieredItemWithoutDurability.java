@@ -1,4 +1,4 @@
-package net.teamsolar.simplest_hammers.item.custom;
+package net.teamsolar.simplest_excavators.item.custom;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -7,7 +7,7 @@ import net.minecraft.world.item.Tier;
 public class TieredItemWithoutDurability extends Item {
     private final Tier tier;
 
-    public TieredItemWithoutDurability(Tier tier, Item.Properties properties) {
+    public TieredItemWithoutDurability(Tier tier, Properties properties) {
         super(properties);
         this.tier = tier;
     }
