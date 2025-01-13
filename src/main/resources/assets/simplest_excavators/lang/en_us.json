@@ -7,10 +7,9 @@
   "item.simplest_excavators.netherite_excavator": "Netherite Excavator",
 
   "item.simplest_excavators.excavator_smithing_template": "Smithing Template",
-  "item.simplest_excavators.excavator_smithing_template.applies_to": "?",
-  "item.simplest_excavators.excavator_smithing_template.ingredients": "?",
+  "item.simplest_excavators.excavator_smithing_template.applies_to": "Excavators & Shovels",
+  "item.simplest_excavators.excavator_smithing_template.ingredients": "Material Blocks",
   "item.simplest_excavators.excavator_smithing_template.upgrade_description": "Excavator Upgrade",
-  "item.simplest_excavators.excavator_smithing_template.base_slot_description": "Add ?",
-  "item.simplest_excavators.excavator_smithing_template.additions_slot_description": "Add material block"
-
+  "item.simplest_excavators.excavator_smithing_template.base_slot_description": "Add an excavator or a shovel",
+  "item.simplest_excavators.excavator_smithing_template.additions_slot_description": "Add an appropriate material block"
 }
