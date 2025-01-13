@@ -4,5 +4,13 @@
   "item.simplest_excavators.iron_excavator": "Iron Excavator",
   "item.simplest_excavators.golden_excavator": "Golden Excavator",
   "item.simplest_excavators.diamond_excavator": "Diamond Excavator",
-  "item.simplest_excavators.netherite_excavator": "Netherite Excavator"
+  "item.simplest_excavators.netherite_excavator": "Netherite Excavator",
+
+  "item.simplest_excavators.excavator_smithing_template": "Smithing Template",
+  "item.simplest_excavators.excavator_smithing_template.applies_to": "?",
+  "item.simplest_excavators.excavator_smithing_template.ingredients": "?",
+  "item.simplest_excavators.excavator_smithing_template.upgrade_description": "Excavator Upgrade",
+  "item.simplest_excavators.excavator_smithing_template.base_slot_description": "Add ?",
+  "item.simplest_excavators.excavator_smithing_template.additions_slot_description": "Add material block"
+
 }
