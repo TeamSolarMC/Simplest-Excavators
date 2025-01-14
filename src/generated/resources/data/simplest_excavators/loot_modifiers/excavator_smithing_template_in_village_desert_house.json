@@ -1,0 +1,19 @@
+{
+  "type": "simplest_excavators:my_loot_modifier",
+  "conditions": [
+    {
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/village/village_desert_house"
+        },
+        {
+          "chance": 0.15,
+          "condition": "minecraft:random_chance"
+        }
+      ]
+    }
+  ],
+  "item": "simplest_excavators:excavator_smithing_template"
+}
