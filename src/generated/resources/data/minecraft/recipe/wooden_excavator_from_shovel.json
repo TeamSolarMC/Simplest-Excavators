@@ -5,5 +5,5 @@
   "result": {
     "id": "simplest_excavators:wooden_excavator"
   },
-  "template": "simplest_excavators:excavator_smithing_template"
+  "template": "simplest_excavators:excavator_upgrade_smithing_template"
 }

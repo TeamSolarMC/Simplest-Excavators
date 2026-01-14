@@ -83,14 +83,14 @@ public class ModItems {
         )
     );
 
-    public static final DeferredItem<SmithingTemplateItem> EXCAVATOR_SMITHING_TEMPLATE = ITEMS.registerItem("excavator_smithing_template",
+    public static final DeferredItem<SmithingTemplateItem> EXCAVATOR_SMITHING_TEMPLATE = ITEMS.registerItem("excavator_upgrade_smithing_template",
         (properties) -> new SmithingTemplateItem(
-            Component.translatable("item.simplest_excavators.excavator_smithing_template.applies_to").withStyle(DESCRIPTION_FORMAT), // DESCRIPTION_FORMAT
-            Component.translatable("item.simplest_excavators.excavator_smithing_template.ingredients").withStyle(DESCRIPTION_FORMAT), // DESCRIPTION_FORMAT
+            Component.translatable("item.simplest_excavators.excavator_upgrade_smithing_template.applies_to").withStyle(DESCRIPTION_FORMAT), // DESCRIPTION_FORMAT
+            Component.translatable("item.simplest_excavators.excavator_upgrade_smithing_template.ingredients").withStyle(DESCRIPTION_FORMAT), // DESCRIPTION_FORMAT
             // Component.translatable("item.simplest_hammers.hammer_smithing_template.upgrade_description").withStyle(ChatFormatting.GRAY),
             // Upgrade descriptions were removed in 1.21.10
-            Component.translatable("item.simplest_excavators.excavator_smithing_template.base_slot_description"), // No formatting
-            Component.translatable("item.simplest_excavators.excavator_smithing_template.additions_slot_description"), // No formatting
+            Component.translatable("item.simplest_excavators.excavator_upgrade_smithing_template.base_slot_description"), // No formatting
+            Component.translatable("item.simplest_excavators.excavator_upgrade_smithing_template.additions_slot_description"), // No formatting
             // Base slot empty icons
             List.of(
                 ResourceLocation.withDefaultNamespace("item/empty_slot_shovel"),

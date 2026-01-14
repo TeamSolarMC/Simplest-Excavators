@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "simplest_excavators:excavator_smithing_template"
+            "items": "simplest_excavators:excavator_upgrade_smithing_template"
           }
         ]
       },
