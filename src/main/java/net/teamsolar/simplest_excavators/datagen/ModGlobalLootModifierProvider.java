@@ -72,7 +72,9 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
     private String matchHouseType(String key) {
         Pattern nameMatcher = Pattern.compile("chests/village/(.+_house)");
         var results = nameMatcher.matcher(key);
-        results.find();
+        if(!results.find()) {
+            throw new RuntimeException("No village chests matching %s".formatted(key));
+        }
         return results.group(1);
         // SimplestExcavators.getLogger().info("%d".formatted(results.groupCount()));
         // SimplestExcavators.getLogger().info("%s".formatted(results.matches()));

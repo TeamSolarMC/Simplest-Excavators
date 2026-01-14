@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "minecraft:diamond_block",
+  "base": "minecraft:netherite_shovel",
+  "result": {
+    "id": "simplest_excavators:netherite_excavator"
+  },
+  "template": "simplest_excavators:excavator_smithing_template"
+}

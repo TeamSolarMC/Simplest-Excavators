@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "simplest_excavators:golden_excavator_from_shovel"
+        "recipe": "minecraft:iron_excavator_from_upgrade"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "simplest_excavators:golden_excavator_from_shovel"
+      "minecraft:iron_excavator_from_upgrade"
     ]
   }
 }

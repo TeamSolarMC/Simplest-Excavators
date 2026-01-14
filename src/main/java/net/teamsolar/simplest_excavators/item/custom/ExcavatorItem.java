@@ -1,19 +1,16 @@
 package net.teamsolar.simplest_excavators.item.custom;
 
-import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Vec3i;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.ToolMaterial;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.Level;
@@ -29,9 +26,18 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ExcavatorItem extends DiggerItemWithoutDurability {
-    public ExcavatorItem(Tier tier, Properties properties) {
-        super(tier, BlockTags.MINEABLE_WITH_SHOVEL, properties);
+public class ExcavatorItem extends Item {
+    public ExcavatorItem(Properties properties) {
+        super(properties);
+    }
+
+    public static Item.Properties excavatorProperties(ToolMaterial material, Item.Properties properties, float attackDamage, float attackSpeed, int durability) {
+        // Note that attackDamage is modified by the tool material's damage
+        // (i.e. attackDamage will be attackDamage + material.attackDamageBonus, attackSpeed will just be attackSpeed)
+        // Durability is set by the code
+        return properties
+                .tool(material, BlockTags.MINEABLE_WITH_SHOVEL, attackDamage, attackSpeed, 0.0F)
+                .durability(durability);
     }
 
     public static List<BlockPos> getBlocksToBeDestroyed(int range, BlockPos initialBlockPos, Player player) {
@@ -107,11 +113,11 @@ public class ExcavatorItem extends DiggerItemWithoutDurability {
         }
 
         if (finalBlockState != null) {
-            if (!level.isClientSide) {
+            if (!level.isClientSide()) {
                 level.setBlock(blockpos, finalBlockState, 11);
                 level.gameEvent(GameEvent.BLOCK_CHANGE, blockpos, GameEvent.Context.of(player, finalBlockState));
                 if (player != null) {
-                    context.getItemInHand().hurtAndBreak(1, player, LivingEntity.getSlotForHand(context.getHand()));
+                    context.getItemInHand().hurtAndBreak(1, player, context.getHand().asEquipmentSlot());
                 }
             }
         }
@@ -138,11 +144,11 @@ public class ExcavatorItem extends DiggerItemWithoutDurability {
 
             }
             if (finalBlockState != null) {
-                if (!level.isClientSide) {
+                if (!level.isClientSide()) {
                     level.setBlock(blockPos, finalBlockState, 11);
                     level.gameEvent(GameEvent.BLOCK_CHANGE, blockPos, GameEvent.Context.of(player, finalBlockState));
                     if (player != null) {
-                        context.getItemInHand().hurtAndBreak(1, player, LivingEntity.getSlotForHand(context.getHand()));
+                        context.getItemInHand().hurtAndBreak(1, player, context.getHand().asEquipmentSlot());
                     }
                 }
 
@@ -151,7 +157,7 @@ public class ExcavatorItem extends DiggerItemWithoutDurability {
                         useOnWithoutRecursion(offsetContext(context, nextBlockPos.subtract(blockPos)), context.getItemInHand().getItem());
                     }
                 }
-                return InteractionResult.sidedSuccess(level.isClientSide);
+                return InteractionResult.SUCCESS;
             } else {
                 return InteractionResult.PASS;
             }
@@ -176,7 +182,7 @@ public class ExcavatorItem extends DiggerItemWithoutDurability {
     }
 
     @Override
-    public boolean canPerformAction(ItemStack stack, ItemAbility itemAbility) {
+    public boolean canPerformAction(@NotNull ItemStack stack, @NotNull ItemAbility itemAbility) {
         return ItemAbilities.DEFAULT_SHOVEL_ACTIONS.contains(itemAbility);
     }
 }

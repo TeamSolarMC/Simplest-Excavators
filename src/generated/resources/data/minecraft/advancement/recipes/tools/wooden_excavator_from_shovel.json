@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "simplest_excavators:wooden_excavator_from_shovel"
+        "recipe": "minecraft:wooden_excavator_from_shovel"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "simplest_excavators:wooden_excavator_from_shovel"
+      "minecraft:wooden_excavator_from_shovel"
     ]
   }
 }
