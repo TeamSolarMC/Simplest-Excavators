@@ -4,10 +4,10 @@
     "simplest_excavators:excavator_smithing_template_modifier_in_armorer_chests",
     "simplest_excavators:excavator_smithing_template_modifier_in_weaponsmith_chests",
     "simplest_excavators:excavator_smithing_template_in_village_plains_house",
+    "simplest_excavators:excavator_smithing_template_in_village_taiga_house",
     "simplest_excavators:excavator_smithing_template_in_village_savanna_house",
-    "simplest_excavators:excavator_smithing_template_in_village_desert_house",
     "simplest_excavators:excavator_smithing_template_in_village_snowy_house",
-    "simplest_excavators:excavator_smithing_template_in_village_taiga_house"
+    "simplest_excavators:excavator_smithing_template_in_village_desert_house"
   ],
   "replace": false
 }

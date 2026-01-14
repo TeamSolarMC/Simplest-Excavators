@@ -1,5 +1,5 @@
-// 1.21.10	2026-01-14T12:42:41.6921453	Global Loot Modifiers : simplest_excavators
-1c5258896f16667dcf37085abca9b0ab0157fe53 data/neoforge/loot_modifiers/global_loot_modifiers.json
+// 1.21.10	2026-01-14T13:19:22.5914429	Global Loot Modifiers : simplest_excavators
+b90bf2fd0f49edae786f83d4e99e93ebceeeac24 data/neoforge/loot_modifiers/global_loot_modifiers.json
 5f58f168d409f0b0e09a7061e9f94398cab80fb4 data/simplest_excavators/loot_modifiers/excavator_smithing_template_in_village_desert_house.json
 ba7db9b21b45869013fd131fe794176bd180b20c data/simplest_excavators/loot_modifiers/excavator_smithing_template_in_village_plains_house.json
 1da6fb6ddc6e2b2ee2b7379ee569b11090290e88 data/simplest_excavators/loot_modifiers/excavator_smithing_template_in_village_savanna_house.json
