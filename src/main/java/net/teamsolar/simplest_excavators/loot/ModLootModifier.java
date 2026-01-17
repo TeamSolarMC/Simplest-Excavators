@@ -10,7 +10,7 @@ import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.neoforged.neoforge.common.loot.LootModifier;
 
-// When applied, adds 1 item (specified by the constructor) to village toolsmith chests with a count of 1.
+// When applied, adds 1 item (specified by the constructor) to the target list with a count of 1.
 public class ModLootModifier extends LootModifier {
     // See below for how the codec works.
     public static final MapCodec<ModLootModifier> CODEC = RecordCodecBuilder.mapCodec(inst ->
