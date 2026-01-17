@@ -32,7 +32,7 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                     "excavator_smithing_template_in".concat(location).concat("_chests"),
                     toExistingLootPoolWithChance(
                             "chests/village/village_".concat(location),
-                            0.75f,
+                            0.80f,
                             ModItems.EXCAVATOR_SMITHING_TEMPLATE.get()
                     )
             );
@@ -55,7 +55,7 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                 "excavator_smithing_template_in_".concat(matchHouseType(key)),
                 toExistingLootPoolWithChance(
                         table.location(),
-                        0.15f,
+                        0.20f,
                         ModItems.EXCAVATOR_SMITHING_TEMPLATE.get()
                 )
             );
