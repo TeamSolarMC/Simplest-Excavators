@@ -1,15 +1,15 @@
 {
   "item.simplest_excavators.wooden_excavator": "Деревянный выкапыватель",
   "item.simplest_excavators.stone_excavator": "Каменный выкапыватель",
+  "item.simplest_excavators.copper_excavator": "Медный выкапыватель",
   "item.simplest_excavators.iron_excavator": "Железный выкапыватель",
   "item.simplest_excavators.golden_excavator": "Золотой выкапыватель",
   "item.simplest_excavators.diamond_excavator": "Алмазный выкапыватель",
   "item.simplest_excavators.netherite_excavator": "Незеритовый выкапыватель",
 
-  "item.simplest_excavators.excavator_upgrade_smithing_template": "Кузнечный шаблон",
+  "item.simplest_excavators.excavator_upgrade_smithing_template": "Улучшение до выкапывателя",
   "item.simplest_excavators.excavator_upgrade_smithing_template.applies_to": "Выкапывателям и лопатам",
   "item.simplest_excavators.excavator_upgrade_smithing_template.ingredients": "Блоки материала",
-  "item.simplest_excavators.excavator_upgrade_smithing_template.upgrade_description": "Улучшение выкапывателя",
   "item.simplest_excavators.excavator_upgrade_smithing_template.base_slot_description": "Поместите выкапыватель или лопату",
   "item.simplest_excavators.excavator_upgrade_smithing_template.additions_slot_description": "Поместите блок нужного материала"
 }
