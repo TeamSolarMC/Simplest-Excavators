@@ -1,15 +1,15 @@
 {
   "item.simplest_excavators.wooden_excavator": "Wooden Excavator",
   "item.simplest_excavators.stone_excavator": "Stone Excavator",
+  "item.simplest_excavators.copper_excavator": "Copper Excavator",
   "item.simplest_excavators.iron_excavator": "Iron Excavator",
   "item.simplest_excavators.golden_excavator": "Golden Excavator",
   "item.simplest_excavators.diamond_excavator": "Diamond Excavator",
   "item.simplest_excavators.netherite_excavator": "Netherite Excavator",
 
-  "item.simplest_excavators.excavator_upgrade_smithing_template": "Smithing Template",
+  "item.simplest_excavators.excavator_upgrade_smithing_template": "Excavator Upgrade",
   "item.simplest_excavators.excavator_upgrade_smithing_template.applies_to": "Excavators & Shovels",
   "item.simplest_excavators.excavator_upgrade_smithing_template.ingredients": "Material Blocks",
-  "item.simplest_excavators.excavator_upgrade_smithing_template.upgrade_description": "Excavator Upgrade",
   "item.simplest_excavators.excavator_upgrade_smithing_template.base_slot_description": "Add an excavator or a shovel",
   "item.simplest_excavators.excavator_upgrade_smithing_template.additions_slot_description": "Add an appropriate material block"
 }

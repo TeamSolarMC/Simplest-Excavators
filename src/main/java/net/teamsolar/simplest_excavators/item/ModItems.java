@@ -42,6 +42,16 @@ public class ModItems {
             393
         )
     );
+    public static final DeferredItem<ExcavatorItem> COPPER_EXCAVATOR = ITEMS.registerItem(
+        "copper_excavator", ExcavatorItem::new,
+        () -> ExcavatorItem.excavatorProperties(
+            ToolMaterial.COPPER,
+            new Item.Properties(),
+            2.5f,
+            0.8F - 4.0F,
+            570
+        )
+    );
     public static final DeferredItem<ExcavatorItem> IRON_EXCAVATOR = ITEMS.registerItem(
         "iron_excavator", ExcavatorItem::new,
         () -> ExcavatorItem.excavatorProperties(
@@ -93,12 +103,15 @@ public class ModItems {
             Component.translatable("item.simplest_excavators.excavator_upgrade_smithing_template.additions_slot_description"), // No formatting
             // Base slot empty icons
             List.of(
-                ResourceLocation.withDefaultNamespace("item/empty_slot_shovel"),
-                ResourceLocation.fromNamespaceAndPath(SimplestExcavators.MODID, "item/empty_slot_excavator")
+                // ResourceLocation.withDefaultNamespace("item/empty_slot_shovel"),
+                // 1.21.10: Slot is now called container/slot/shovel
+                // ?
+                ResourceLocation.withDefaultNamespace("container/slot/shovel"),
+                ResourceLocation.fromNamespaceAndPath(SimplestExcavators.MODID, "container/slot/empty_slot_excavator")
             ),
             // Additional slot empty icons
             List.of(
-                ResourceLocation.fromNamespaceAndPath(SimplestExcavators.MODID, "item/empty_slot_block")
+                ResourceLocation.fromNamespaceAndPath(SimplestExcavators.MODID, "container/slot/empty_slot_block")
             ),
             properties
         )

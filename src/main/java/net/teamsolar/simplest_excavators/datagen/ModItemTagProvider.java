@@ -22,9 +22,10 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(
                         ModItems.WOODEN_EXCAVATOR.get(),
                         ModItems.STONE_EXCAVATOR.get(),
-                        ModItems.GOLDEN_EXCAVATOR.get(),
+                        ModItems.COPPER_EXCAVATOR.get(),
                         ModItems.IRON_EXCAVATOR.get(),
                         ModItems.DIAMOND_EXCAVATOR.get(),
+                        ModItems.GOLDEN_EXCAVATOR.get(),
                         ModItems.NETHERITE_EXCAVATOR.get());
         this.tag(ItemTags.DURABILITY_ENCHANTABLE).addTag(ModTags.Items.EXCAVATORS);
         this.tag(ItemTags.MINING_ENCHANTABLE).addTag(ModTags.Items.EXCAVATORS);

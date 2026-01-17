@@ -1,7 +1,10 @@
 {
   "type": "minecraft:smithing_transform",
   "addition": "minecraft:diamond_block",
-  "base": "simplest_excavators:golden_excavator",
+  "base": [
+    "simplest_excavators:golden_excavator",
+    "simplest_excavators:iron_excavator"
+  ],
   "result": {
     "id": "simplest_excavators:diamond_excavator"
   },

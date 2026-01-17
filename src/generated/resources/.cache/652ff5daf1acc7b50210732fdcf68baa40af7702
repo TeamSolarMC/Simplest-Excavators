@@ -1,4 +1,5 @@
-// 1.21.10	2026-01-14T13:35:42.5263676	Model Definitions - simplest_excavators
+// 1.21.10	2026-01-16T22:25:25.3001606	Model Definitions - simplest_excavators
+7366d3c9dbde2c30320df98914fd47f3c7bd41c1 assets/simplest_excavators/items/copper_excavator.json
 259820114c0f9ce6700f94b8ea90a5f26844d2e7 assets/simplest_excavators/items/diamond_excavator.json
 58d8bf9818acca2984ca407f1537cec8bb1527d7 assets/simplest_excavators/items/excavator_upgrade_smithing_template.json
 6ada0c2f93d0461cc95d46b28f1a38ea10e2da70 assets/simplest_excavators/items/golden_excavator.json
@@ -6,6 +7,7 @@
 c8ad80ee44cb77a03ded00064a0d326d89da195d assets/simplest_excavators/items/netherite_excavator.json
 7c6e75dbf38d71f57f955c3afe56650ea684b48a assets/simplest_excavators/items/stone_excavator.json
 0bca959bab2b31eaa0e8b58a5b51853f26ba3b60 assets/simplest_excavators/items/wooden_excavator.json
+3ab97b4efbd353cd4314f68133bb8b2a1142077b assets/simplest_excavators/models/item/copper_excavator.json
 8a5f262f5d4685e128c140e8be4a551042005881 assets/simplest_excavators/models/item/diamond_excavator.json
 49ab62459a670085647be02dc6a236b886919219 assets/simplest_excavators/models/item/excavator_upgrade_smithing_template.json
 6f92aada8b06ba40cf199b77b0bbca26ec3e49f5 assets/simplest_excavators/models/item/golden_excavator.json

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_copper_excavator": {
+      "conditions": {
+        "items": [
+          {
+            "items": "simplest_excavators:copper_excavator"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:copper_excavator_blasting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_copper_excavator"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:copper_excavator_blasting"
+    ]
+  }
+}

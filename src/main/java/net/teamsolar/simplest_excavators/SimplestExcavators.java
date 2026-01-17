@@ -45,6 +45,7 @@ public class SimplestExcavators
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.WOODEN_EXCAVATOR);
             event.accept(ModItems.STONE_EXCAVATOR);
+            event.accept(ModItems.COPPER_EXCAVATOR);
             event.accept(ModItems.IRON_EXCAVATOR);
             event.accept(ModItems.GOLDEN_EXCAVATOR);
             event.accept(ModItems.DIAMOND_EXCAVATOR);

@@ -74,24 +74,36 @@ public class ModRecipeProvider extends RecipeProvider {
                 Ingredient.of(Items.SMOOTH_STONE),
                 ModItems.STONE_EXCAVATOR.get()
         );
+        // Alternative path: Stone -> Copper -> Iron / Stone -> Iron
         excavatorUpgradeRecipe(
                 Ingredient.of(ModItems.STONE_EXCAVATOR.get()),
+                Ingredient.of(Items.COPPER_BLOCK),
+                ModItems.COPPER_EXCAVATOR.get()
+        );
+        // *
+        excavatorUpgradeRecipe(
+                Ingredient.of(ModItems.STONE_EXCAVATOR.get(), ModItems.COPPER_EXCAVATOR.get()),
                 Ingredient.of(Items.IRON_BLOCK),
                 ModItems.IRON_EXCAVATOR.get()
         );
+
+        // Alternative path: Iron -> Gold -> Diamond / Iron -> Diamond
         excavatorUpgradeRecipe(
                 Ingredient.of(ModItems.IRON_EXCAVATOR.get()),
                 Ingredient.of(Items.GOLD_BLOCK),
                 ModItems.GOLDEN_EXCAVATOR.get()
         );
+        // *
         excavatorUpgradeRecipe(
-                Ingredient.of(ModItems.GOLDEN_EXCAVATOR.get()),
+                Ingredient.of(ModItems.GOLDEN_EXCAVATOR.get(), ModItems.IRON_EXCAVATOR.get()),
                 Ingredient.of(Items.DIAMOND_BLOCK),
                 ModItems.DIAMOND_EXCAVATOR.get()
         );
+
         netheriteSmithing(ModItems.DIAMOND_EXCAVATOR.get(), RecipeCategory.MISC, ModItems.NETHERITE_EXCAVATOR.get());
 
         basicBlastingAndSmeltingRecipe(ModItems.IRON_EXCAVATOR.get(), Items.IRON_NUGGET);
+        basicBlastingAndSmeltingRecipe(ModItems.COPPER_EXCAVATOR.get(), Items.COPPER_NUGGET);
         basicBlastingAndSmeltingRecipe(ModItems.GOLDEN_EXCAVATOR.get(), Items.GOLD_NUGGET);
     }
 
