@@ -3,7 +3,7 @@ package net.teamsolar.simplest_excavators.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.storage.loot.BuiltInLootTables;
 import net.minecraft.world.level.storage.loot.LootTable;
@@ -43,18 +43,18 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
         var myLootTables = BuiltInLootTables
                 .all()
                 .stream().filter((table ) -> {
-                    var key = table.location().getPath();
+                    var key = table.identifier().getPath();
                     return key.startsWith("chests/village") && key.matches("chests/village/(.+_house)");
                 })
                 .sorted()
                 .toList();
 
         for(ResourceKey<LootTable> table: myLootTables) {
-            var key = table.location().getPath();
+            var key = table.identifier().getPath();
             add(
                 "excavator_smithing_template_in_".concat(matchHouseType(key)),
                 toExistingLootPoolWithChance(
-                        table.location(),
+                        table.identifier(),
                         0.20f,
                         ModItems.EXCAVATOR_SMITHING_TEMPLATE.get()
                 )
@@ -73,7 +73,7 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
         // SimplestExcavators.getLogger().info("%s".formatted(results.matches()));
     }
 
-    private ModLootModifier toExistingLootPoolWithChance(ResourceLocation location, float chance, Item item) {
+    private ModLootModifier toExistingLootPoolWithChance(Identifier location, float chance, Item item) {
         return new ModLootModifier(
                 new LootItemCondition[]{
                         LootTableIdCondition.builder(location)
@@ -85,6 +85,6 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
         );
     }
     private ModLootModifier toExistingLootPoolWithChance(String location, float chance, Item item) {
-        return toExistingLootPoolWithChance(ResourceLocation.withDefaultNamespace(location), chance, item);
+        return toExistingLootPoolWithChance(Identifier.withDefaultNamespace(location), chance, item);
     }
 }

@@ -38,7 +38,7 @@ public class ModLootModifier extends LootModifier {
     // Parameters are the existing loot, and the loot context.
     @Override
     protected ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
-        // ResourceLocation lootTableId = context.getQueriedLootTableId();
+        // Identifier lootTableId = context.getQueriedLootTableId();
         // SimplestHammers.getLogger().info("Loot table %s; %s".formatted(lootTableId.getNamespace(), lootTableId.getPath()));
         /*if(lootTableId.getNamespace().equals("minecraft") && lootTableId.getPath().equals("chests/village/village_toolsmith")) {
             // Add your items to generatedLoot here.

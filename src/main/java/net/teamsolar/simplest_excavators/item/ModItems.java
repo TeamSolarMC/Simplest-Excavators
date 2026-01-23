@@ -6,7 +6,7 @@ import net.teamsolar.simplest_excavators.item.custom.ExcavatorItem;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SmithingTemplateItem;
 import net.neoforged.bus.api.IEventBus;
@@ -103,15 +103,15 @@ public class ModItems {
             Component.translatable("item.simplest_excavators.excavator_upgrade_smithing_template.additions_slot_description"), // No formatting
             // Base slot empty icons
             List.of(
-                // ResourceLocation.withDefaultNamespace("item/empty_slot_shovel"),
+                // Identifier.withDefaultNamespace("item/empty_slot_shovel"),
                 // 1.21.10: Slot is now called container/slot/shovel
                 // ?
-                ResourceLocation.withDefaultNamespace("container/slot/shovel"),
-                ResourceLocation.fromNamespaceAndPath(SimplestExcavators.MODID, "container/slot/empty_slot_excavator")
+                Identifier.withDefaultNamespace("container/slot/shovel"),
+                Identifier.fromNamespaceAndPath(SimplestExcavators.MODID, "container/slot/empty_slot_excavator")
             ),
             // Additional slot empty icons
             List.of(
-                ResourceLocation.fromNamespaceAndPath(SimplestExcavators.MODID, "container/slot/empty_slot_block")
+                Identifier.fromNamespaceAndPath(SimplestExcavators.MODID, "container/slot/empty_slot_block")
             ),
             properties
         )
