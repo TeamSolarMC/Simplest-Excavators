@@ -3,14 +3,14 @@ package net.teamsolar.simplest_excavators.event;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.trading.ItemCost;
 import net.minecraft.world.item.trading.MerchantOffer;
-import net.neoforged.neoforge.event.village.WandererTradesEvent;
+// import net.neoforged.neoforge.event.village.WandererTradesEvent;
 import net.teamsolar.simplest_excavators.SimplestExcavators;
 import net.teamsolar.simplest_excavators.item.ModItems;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 
-@EventBusSubscriber(modid = SimplestExcavators.MODID)
+/*@EventBusSubscriber(modid = SimplestExcavators.MODID)
 public class ModWanderingTraderEvent {
     @SubscribeEvent
     public static void wanderingVillagerTrade(WandererTradesEvent event) {
@@ -20,4 +20,7 @@ public class ModWanderingTraderEvent {
                 1, 2, 0.2f
         ));
     }
-}
+}*/
+
+// Trades are now data driven
+// (See https://github.com/neoforged/.github/blob/main/primers/26.1/index.md)

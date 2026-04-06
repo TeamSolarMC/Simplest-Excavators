@@ -6,6 +6,9 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.ItemStackTemplate;
+import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.teamsolar.simplest_excavators.item.ModItems;
 import net.minecraft.tags.ItemTags;
@@ -24,10 +27,10 @@ public class ModRecipeProvider extends RecipeProvider {
     @Override
     protected void buildRecipes() {
 
-        ShapedRecipeBuilder.shaped(
-                this.registries.lookupOrThrow(Registries.ITEM),
+        shaped(
                 RecipeCategory.MISC,
-                ModItems.EXCAVATOR_SMITHING_TEMPLATE.toStack(2)
+                ModItems.EXCAVATOR_SMITHING_TEMPLATE,
+                2
         )
                 .pattern("ABA")
                 .pattern("ACA")
@@ -138,6 +141,7 @@ public class ModRecipeProvider extends RecipeProvider {
         SimpleCookingRecipeBuilder.blasting(
                         Ingredient.of(input),
                         RecipeCategory.MISC,
+                        CookingBookCategory.MISC,
                         outputItem,
                         0.1F,
                         100
@@ -147,6 +151,7 @@ public class ModRecipeProvider extends RecipeProvider {
         SimpleCookingRecipeBuilder.smelting(
                         Ingredient.of(input),
                         RecipeCategory.MISC,
+                        CookingBookCategory.MISC,
                         outputItem,
                         0.1F,
                         200

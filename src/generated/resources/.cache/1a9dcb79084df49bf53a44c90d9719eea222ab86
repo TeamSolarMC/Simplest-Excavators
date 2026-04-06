@@ -1,4 +1,4 @@
-// 1.21.11	2026-01-21T13:20:04.7490169	Global Loot Modifiers : simplest_excavators
+// 26.1	2026-03-30T16:58:15.8735809	Global Loot Modifiers : simplest_excavators
 065038926d75bddde431bb9f3d1378c807439532 data/neoforge/loot_modifiers/global_loot_modifiers.json
 9e9b94a0135fa7375d26386d0cd092df6606f5f1 data/simplest_excavators/loot_modifiers/excavator_smithing_template_inarmorer_chests.json
 327c5cb1f173a13ba8f86e11189ab67fbf913983 data/simplest_excavators/loot_modifiers/excavator_smithing_template_intoolsmith_chests.json
