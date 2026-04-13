@@ -1,5 +1,6 @@
 package net.teamsolar.simplest_excavators.item;
 
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ToolMaterial;
 import net.teamsolar.simplest_excavators.SimplestExcavators;
 import net.teamsolar.simplest_excavators.item.custom.ExcavatorItem;
@@ -114,7 +115,8 @@ public class ModItems {
                 Identifier.fromNamespaceAndPath(SimplestExcavators.MODID, "container/slot/empty_slot_block")
             ),
             properties
-        )
+        ),
+        () -> new Item.Properties().rarity(Rarity.UNCOMMON)
     );
 
     public static void register(IEventBus eventBus) {
