@@ -17,7 +17,7 @@ authors="${mod_authors}" #optional
 
 
 
-description='''Vanilla excavators breaking in a 3x3 area.'''
+description='''${mod_description}'''
 logoFile = "icon.png"
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
