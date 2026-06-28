@@ -1,4 +1,4 @@
-// 26.2	2026-06-25T12:11:08.9335681	My Recipes
+// 26.2	2026-06-28T12:19:36.6888805	My Recipes
 ebdb29f9df1bbf047ecf52028a52f56f6b66e16a data/minecraft/advancement/recipes/misc/copper_excavator_blasting.json
 dcd942632131d7571223836bd90ef3cf1d2d4f45 data/minecraft/advancement/recipes/misc/copper_excavator_smelting.json
 2f24ec520159ee0d19a8dbfb3043fc92d9b901d6 data/minecraft/advancement/recipes/misc/golden_excavator_blasting.json
@@ -19,8 +19,8 @@ ab773c35962cce25cb269364eae8148e001f0bd5 data/minecraft/advancement/recipes/tool
 a4509646107012c7a8d4f2f79a09bddd614896a5 data/minecraft/advancement/recipes/tools/stone_excavator_from_upgrade.json
 27b55988417f4a59bd4864d95ca11114c7ba6c55 data/minecraft/advancement/recipes/tools/wooden_excavator_from_shovel.json
 2851e20656e6f15334680c5f0594db11e5f1da29 data/minecraft/recipe/copper_excavator_blasting.json
-7385943e0d83dd02a8e47ffefe0b4c2b47a5e827 data/minecraft/recipe/copper_excavator_from_shovel.json
-3e6b777b3563cfdaf3d428e32c82fa0dee4f15e6 data/minecraft/recipe/copper_excavator_from_upgrade.json
+121e638704f9559e539a11784336ee43ee39db1a data/minecraft/recipe/copper_excavator_from_shovel.json
+f4ec516ddda0ed3fdd07b43615cc3643cbd60db5 data/minecraft/recipe/copper_excavator_from_upgrade.json
 a447090bcfd0a71c7e586c76348fe9a689191dac data/minecraft/recipe/copper_excavator_smelting.json
 29b1e17a55db3c6f6047a362d3506ae2bb562150 data/minecraft/recipe/diamond_excavator_from_shovel.json
 bb3d8e218ef151c828431e9a89e7c06ac38de3c2 data/minecraft/recipe/diamond_excavator_from_upgrade.json

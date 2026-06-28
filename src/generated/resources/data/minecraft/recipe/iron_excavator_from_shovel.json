@@ -1,16 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
-  "addition": [
-    "minecraft:copper_block",
-    "minecraft:exposed_copper",
-    "minecraft:weathered_copper",
-    "minecraft:oxidized_copper",
-    "minecraft:waxed_copper_block",
-    "minecraft:waxed_exposed_copper",
-    "minecraft:waxed_weathered_copper",
-    "minecraft:waxed_oxidized_copper"
-  ],
-  "base": "minecraft:copper_shovel",
+  "addition": "minecraft:iron_block",
+  "base": "minecraft:iron_shovel",
   "result": {
     "id": "simplest_excavators:iron_excavator"
   },
