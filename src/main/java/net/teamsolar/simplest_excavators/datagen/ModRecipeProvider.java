@@ -52,6 +52,12 @@ public class ModRecipeProvider extends RecipeProvider {
                 ModItems.STONE_EXCAVATOR.get()
         );
         excavatorSmithingRecipe(
+                Ingredient.of(Items.COPPER_SHOVEL),
+                // Ingredient.of(Items.COPPER_BLOCK.asList().stream()),
+                Ingredient.of(Items.COPPER_BLOCK.weathering().unaffected()),
+                ModItems.COPPER_EXCAVATOR.get()
+        );
+        excavatorSmithingRecipe(
                 Ingredient.of(Items.IRON_SHOVEL),
                 Ingredient.of(Items.IRON_BLOCK.asItem()),
                 ModItems.IRON_EXCAVATOR.get()
@@ -80,7 +86,8 @@ public class ModRecipeProvider extends RecipeProvider {
         // Alternative path: Stone -> Copper -> Iron / Stone -> Iron
         excavatorUpgradeRecipe(
                 Ingredient.of(ModItems.STONE_EXCAVATOR.get()),
-                Ingredient.of(Items.COPPER_BLOCK),
+                // Ingredient.of(Items.COPPER_BLOCK.asList().stream()),
+                Ingredient.of(Items.COPPER_BLOCK.weathering().unaffected()),
                 ModItems.COPPER_EXCAVATOR.get()
         );
         // *

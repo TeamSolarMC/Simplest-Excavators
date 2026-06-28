@@ -10,7 +10,7 @@
     "minecraft:waxed_weathered_copper",
     "minecraft:waxed_oxidized_copper"
   ],
-  "base": "simplest_excavators:stone_excavator",
+  "base": "minecraft:copper_shovel",
   "result": {
     "id": "simplest_excavators:copper_excavator"
   },
