@@ -1,18 +1,17 @@
 package net.teamsolar.simplest_excavators.item;
 
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ToolMaterial;
-import net.teamsolar.simplest_excavators.SimplestExcavators;
-import net.teamsolar.simplest_excavators.item.custom.ExcavatorItem;
-
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.SmithingTemplateItem;
+import net.minecraft.world.item.ToolMaterial;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.teamsolar.simplest_excavators.SimplestExcavators;
+import net.teamsolar.simplest_excavators.item.custom.ExcavatorItem;
 
 import java.util.List;
 

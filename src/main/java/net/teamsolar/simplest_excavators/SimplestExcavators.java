@@ -1,19 +1,19 @@
 package net.teamsolar.simplest_excavators;
 
 import com.mojang.logging.LogUtils;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.teamsolar.simplest_excavators.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import net.teamsolar.simplest_excavators.item.ModItems;
 import net.teamsolar.simplest_excavators.loot.ModLootModifiers;
 import org.slf4j.Logger;
 

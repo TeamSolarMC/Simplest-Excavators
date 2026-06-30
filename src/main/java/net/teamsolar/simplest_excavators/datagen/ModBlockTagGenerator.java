@@ -1,9 +1,9 @@
 package net.teamsolar.simplest_excavators.datagen;
 
-import net.neoforged.neoforge.common.data.BlockTagsProvider;
-import net.teamsolar.simplest_excavators.SimplestExcavators;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.neoforged.neoforge.common.data.BlockTagsProvider;
+import net.teamsolar.simplest_excavators.SimplestExcavators;
 
 import java.util.concurrent.CompletableFuture;
 

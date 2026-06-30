@@ -4,9 +4,9 @@ import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.data.PackOutput;
 import net.teamsolar.simplest_excavators.SimplestExcavators;
 import net.teamsolar.simplest_excavators.item.ModItems;
-import net.minecraft.data.PackOutput;
 import org.jetbrains.annotations.NotNull;
 
 public class ModModelProvider extends ModelProvider {

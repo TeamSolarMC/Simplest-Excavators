@@ -1,18 +1,16 @@
 package net.teamsolar.simplest_excavators.datagen;
 
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.TagAppender;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
+import net.neoforged.neoforge.common.data.ItemTagsProvider;
 import net.teamsolar.simplest_excavators.SimplestExcavators;
 import net.teamsolar.simplest_excavators.item.ModItems;
 import net.teamsolar.simplest_excavators.util.ModTags;
-import net.minecraft.core.HolderLookup;
-import net.minecraft.data.PackOutput;
 import org.jetbrains.annotations.NotNull;
-import net.neoforged.neoforge.common.data.ItemTagsProvider;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 

@@ -1,12 +1,12 @@
 package net.teamsolar.simplest_excavators.util;
 
-import net.teamsolar.simplest_excavators.SimplestExcavators;
 import net.minecraft.resources.Identifier;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.teamsolar.simplest_excavators.SimplestExcavators;
 
 public class ModTags {
     public static class Blocks {
